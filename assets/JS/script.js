@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const pdfViewer = document.getElementById('pdfViewer');
 
 
-    const pdfUrl = 'https://santander73.github.io/consolidacion_2/joselus.pdf';
+    const pdfUrl = 'https://santander73.github.io/M2---Evaluaci-n-Modular/archivo/joselus.pdf';
     showCvBtn.addEventListener('click', function () {
         cvOverlay.style.display = 'block';
         document.body.style.overflow = 'hidden';
