@@ -78,17 +78,17 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 90%;
-    max-height: 90%;
+    max-height: 90vh;
     background-color: white;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 1 rem;
+    border-radius: 8px;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
 #pdfViewer {
     width: 100%;
-    height: auto;
-    max-height: 80vh;
+    height: 180vh;
+    display: block;
 }
 
 #closeCvBtn {

@@ -63,16 +63,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         pdfjsLib.getDocument(url).promise.then(function (pdf) {
-            pdf.getPage(1).then(function (page) {
-                const scale = 1.5;
+           pdf.getPage(1).then(function (page) {
+                const scale = 2.2;
                 const viewport = page.getViewport({ scale: scale });
 
                 pdfViewer.height = viewport.height;
                 pdfViewer.width = viewport.width;
 
                 const renderContext = {
-                    canvasContext: pdfViewer.getContext('2d'),
-                    viewport: viewport
+                canvasContext: pdfViewer.getContext('2d'),
+                viewport: viewport
                 };
                 page.render(renderContext);
                 console.log('PDF renderizado correctamente');
@@ -180,15 +180,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-//function formContacto() {
-    //let form = document.getElementById("contacto")
-    //let envDiv = document.getElementById("enviar")
-    //if (form.checkValidity()) {
-        //let nombre = documnet.getElementById("inputName").value
-        //envDiv.innerHTML = "!Gracias por escribir," + nombre + "!Pronto te respondere.";
-        //envDiv.classList.add("border", "p-1")
-    //}
-//}
 
 //Movimiento imagenes card
 
